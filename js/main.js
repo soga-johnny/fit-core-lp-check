@@ -53,4 +53,73 @@ document.addEventListener('DOMContentLoaded', () => {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  /* ---------- Scroll reveal ---------- */
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const markReveal = (selector, options = {}) => {
+    document.querySelectorAll(selector).forEach((el, index) => {
+      if (el.classList.contains('reveal')) return;
+      el.classList.add('reveal');
+      if (options.variant) el.classList.add(`reveal--${options.variant}`);
+      if (options.stagger) {
+        el.setAttribute('data-delay', String((index % 8) + 1));
+      }
+    });
+  };
+
+  markReveal('.campaign-banner .container', { variant: 'soft' });
+  markReveal('.about__photos', { variant: 'left' });
+  markReveal('.about__text', { variant: 'right' });
+  markReveal('.feature-card', { stagger: true });
+  markReveal('.programs__intro .section-heading');
+  markReveal('.programs__lead', { variant: 'left' });
+  markReveal('.program-tags li', { stagger: true, variant: 'soft' });
+  markReveal('.facility .section-heading');
+  markReveal('.facility-card', { stagger: true, variant: 'soft' });
+  markReveal('.reviews .section-heading');
+  markReveal('.review-card', { stagger: true });
+  markReveal('.reviews__action');
+  markReveal('.flow .section-heading');
+  markReveal('.flow-card', { stagger: true });
+  markReveal('.pricing-campaign', { variant: 'soft' });
+  markReveal('.pricing .section-heading');
+  markReveal('.pricing-visit', { variant: 'soft' });
+  markReveal('.price-card', { stagger: true });
+  markReveal('.access .section-heading');
+  markReveal('.access__map-col', { variant: 'left' });
+  markReveal('.access__info', { variant: 'right' });
+  markReveal('.news .section-heading');
+  markReveal('.news-item', { stagger: true });
+  markReveal('.news__action');
+  markReveal('.contact .section-heading');
+  markReveal('.contact-form', { variant: 'soft' });
+  markReveal('.footer__brand', { variant: 'left' });
+  markReveal('.footer__nav', { variant: 'right' });
+
+  if (reduceMotion) {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
+    document.body.classList.add('is-ready');
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.14,
+      rootMargin: '0px 0px -8% 0px',
+    }
+  );
+
+  document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+  requestAnimationFrame(() => {
+    document.body.classList.add('is-ready');
+  });
 });
