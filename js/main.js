@@ -46,6 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', (e) => {
       const id = link.getAttribute('href');
       if (!id || id === '#') return;
+
+      if (id === '#top') {
+        e.preventDefault();
+        closeMenu();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();

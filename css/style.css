@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -1611,19 +1612,72 @@ ul {
   color: var(--color-text);
 }
 
-.access__tel {
+.access__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.access__line {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 220px;
-  padding: 12px 28px;
+  min-height: 48px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #06c755;
+  border-radius: var(--radius-pill);
+  line-height: 1.2;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.access__line:hover {
+  opacity: 0.92;
+}
+
+.access__tel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
   font-size: 28px;
   font-weight: 700;
   color: var(--color-text);
-  background: #fff;
-  border: 1.5px solid #2a2a2a;
-  border-radius: 999px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   line-height: 1.2;
+}
+
+.access__hours {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.access__hours-row {
+  display: grid;
+  grid-template-columns: 5.5em 1fr;
+  gap: 12px 16px;
+  align-items: baseline;
+}
+
+.access__hours-row dt,
+.access__hours-row dd {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.access__hours-row dt {
+  white-space: nowrap;
 }
 
 .access__parking {
@@ -1981,6 +2035,22 @@ ul {
 }
 
 .footer__info-row a {
+  color: inherit;
+}
+
+.footer__hours {
+  gap: 4px;
+}
+
+.footer__hours .access__hours-row {
+  grid-template-columns: 4.8em 1fr;
+  gap: 4px 12px;
+}
+
+.footer__hours .access__hours-row dt,
+.footer__hours .access__hours-row dd {
+  font-size: 14px;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -2666,12 +2736,32 @@ ul {
     font-size: 14px;
   }
 
-  .access__tel {
-    min-width: 0;
+  .access__contact {
     width: 100%;
-    max-width: none;
+    gap: 10px;
+  }
+
+  .access__line {
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    font-size: 15px;
+  }
+
+  .access__tel {
+    width: auto;
     font-size: 22px;
-    padding: 12px 16px;
+    padding: 0;
+  }
+
+  .access__hours-row {
+    grid-template-columns: 4.8em 1fr;
+    gap: 6px 12px;
+  }
+
+  .access__hours-row dt,
+  .access__hours-row dd {
+    font-size: 14px;
   }
 
   .access__parking {

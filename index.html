@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260715n">
+  <link rel="stylesheet" href="css/style.css?v=20260716c">
 </head>
 <body>
   <header class="header">
@@ -31,7 +31,7 @@
       <a href="#program">充実のプログラム</a>
       <a href="#reviews">お客様の声</a>
       <a href="#flow">予約から利用・退店までの流れ</a>
-      <a href="#price">料金表</a>
+      <a href="#price-table">料金表</a>
       <a href="#access">アクセス</a>
       <a href="#contact">お問い合わせ</a>
       <a class="btn btn--primary btn--sm header__nav-cta" href="#contact">無料体験を予約する<span class="btn__arrow" aria-hidden="true"></span></a>
@@ -90,8 +90,8 @@
       <div class="container">
         <div class="about__top">
           <div class="about__photos">
-            <img src="assets/images/about-1.png" alt="ジム内のトレーニング風景" class="about__photo about__photo--1" width="257" height="235">
-            <img src="assets/images/about-2.png" alt="スタッフと会員のトレーニング風景" class="about__photo about__photo--2" width="210" height="263">
+            <img src="assets/images/hero-fv2.png" alt="トレーナーがマシントレーニングをサポートする様子" class="about__photo about__photo--1" width="257" height="235">
+            <img src="assets/images/facility--4.png" alt="ダンベルラック" class="about__photo about__photo--2" width="210" height="263">
           </div>
           <div class="about__text">
             <div class="section-heading">
@@ -325,7 +325,7 @@
 
         <div class="section-heading section-heading--center">
           <span class="section-heading__dots" aria-hidden="true"></span>
-          <h2 class="section-heading__title">料金表</h2>
+          <h2 class="section-heading__title" id="price-table">料金表</h2>
         </div>
 
         <a class="pricing-visit" href="#contact">
@@ -445,23 +445,35 @@
           <div class="access__info">
             <div class="access__block">
               <h3 class="access__label">住所</h3>
-              <p>〒400-0845 山梨県甲府市上今井町681-12</p>
+              <p>〒400-0845<br>山梨県甲府市上今井町681-12</p>
             </div>
             <div class="access__block">
               <h3 class="access__label">お問い合わせ</h3>
-              <a class="access__tel" href="tel:0552430012">055-243-0012</a>
+              <div class="access__contact">
+                <a class="access__line" href="https://lin.ee/ra7OqvO" target="_blank" rel="noopener noreferrer">LINEで問い合わせる</a>
+                <a class="access__tel" href="tel:0552430012">055-243-0012</a>
+              </div>
             </div>
             <div class="access__block">
               <h3 class="access__label">営業時間</h3>
-              <p>
-                月〜木 10:00〜21:00（最終受付20:30）<br>
-                土日・祝 10:00〜18:00（最終受付17:30）<br>
-                12:30〜13:30 CLOSE
-              </p>
+              <dl class="access__hours">
+                <div class="access__hours-row">
+                  <dt>月〜木</dt>
+                  <dd>10:00〜21:00（最終受付20:30）</dd>
+                </div>
+                <div class="access__hours-row">
+                  <dt>土日・祝</dt>
+                  <dd>10:00〜18:00（最終受付17:30）</dd>
+                </div>
+                <div class="access__hours-row">
+                  <dt></dt>
+                  <dd>12:30〜13:30 CLOSE</dd>
+                </div>
+              </dl>
             </div>
             <div class="access__block">
               <h3 class="access__label">定休日</h3>
-              <p>毎週金曜日　年末年始</p>
+              <p>毎週金曜日<br>年末年始</p>
             </div>
             <p class="access__parking">駐車場完備 20台</p>
           </div>
@@ -584,9 +596,20 @@
           <div class="footer__info-row">
             <dt>営業時間</dt>
             <dd>
-              月〜木 10:00〜21:00（最終受付20:30）<br>
-              土日・祝 10:00〜18:00（最終受付17:30）<br>
-              12:30〜13:30 CLOSE
+              <dl class="access__hours footer__hours">
+                <div class="access__hours-row">
+                  <dt>月〜木</dt>
+                  <dd>10:00〜21:00（最終受付20:30）</dd>
+                </div>
+                <div class="access__hours-row">
+                  <dt>土日・祝</dt>
+                  <dd>10:00〜18:00（最終受付17:30）</dd>
+                </div>
+                <div class="access__hours-row">
+                  <dt></dt>
+                  <dd>12:30〜13:30 CLOSE</dd>
+                </div>
+              </dl>
             </dd>
           </div>
         </dl>
@@ -600,7 +623,7 @@
         </ul>
         <ul class="footer__nav-row">
           <li><a href="#flow">予約から利用・退店までの流れ</a></li>
-          <li><a href="#price">料金表</a></li>
+          <li><a href="#price-table">料金表</a></li>
           <li><a href="#access">アクセス</a></li>
           <li><a href="#contact">お問い合わせ</a></li>
         </ul>
@@ -609,6 +632,6 @@
     <p class="footer__copy">&copy;2026 Fit &amp; Core 甲府</p>
   </footer>
 
-  <script src="js/main.js?v=20260715n"></script>
+  <script src="js/main.js?v=20260716a"></script>
 </body>
 </html>
