@@ -26,6 +26,8 @@
   --color-submit: #51514d;
 
   --font-sans: "Noto Sans JP", sans-serif;
+  --site-max: 1920px;
+  --site-width: min(100vw, var(--site-max));
   --container: min(1200px, calc(100% - 48px));
   --radius-sm: 12px;
   --radius-md: 16px;
@@ -51,6 +53,14 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: var(--color-text);
+  background: #fff;
+}
+
+.site {
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
+  overflow-x: hidden;
   background: var(--color-bg);
 }
 
@@ -547,7 +557,7 @@ ul {
 
   .hero__inner {
     padding: 56px 24px 140px;
-    padding-left: max(24px, calc((100vw - 1512px) / 2 + 80px));
+    padding-left: max(24px, calc((var(--site-width) - 1512px) / 2 + 80px));
   }
 
   .hero__content {
@@ -836,7 +846,7 @@ ul {
   background: #fff;
   padding-top: clamp(140px, 14vw, 220px);
   padding-bottom: clamp(140px, 14vw, 220px);
-  min-height: calc(100vw * 689 / 1512 + 120px);
+  min-height: calc(var(--site-width) * 689 / 1512 + 120px);
 }
 
 .programs__bg {
@@ -1843,7 +1853,7 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
-  top: calc(100vw * 366 / 1512 * 0.35);
+  top: calc(var(--site-width) * 366 / 1512 * 0.35);
   bottom: 0;
   background: #fefaf6;
   z-index: 0;
@@ -2112,7 +2122,7 @@ ul {
   .programs {
     padding-top: 100px;
     padding-bottom: 120px;
-    min-height: calc(100vw * 689 / 1512 + 80px);
+    min-height: calc(var(--site-width) * 689 / 1512 + 80px);
   }
 
   .facility > .container {
