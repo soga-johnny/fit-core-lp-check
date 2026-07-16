@@ -2456,6 +2456,10 @@ ul {
     min-height: 0;
   }
 
+  .programs .section-heading {
+    margin-bottom: clamp(120px, 32vw, 180px);
+  }
+
   .programs__bg img {
     object-fit: cover;
     object-position: center top;
@@ -2972,6 +2976,17 @@ ul {
 
   .form-row--split {
     grid-template-columns: 1fr;
+  }
+}
+
+/* PC layout tuning */
+@media (min-width: 1025px) {
+  .programs .section-heading {
+    margin-bottom: clamp(100px, 10vw, 160px);
+  }
+
+  .facility > .container {
+    padding-top: clamp(20px, 2.2vw, 36px);
   }
 }
 
