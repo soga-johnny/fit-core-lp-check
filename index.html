@@ -6,17 +6,19 @@
   <meta name="description" content="FIT＆CORE 甲府 — セミパーソナル付きプログラムフィットネス。1回60分、4つのエクササイズでムリなくやせる、きれいになれる。">
   <title>FIT＆CORE 甲府 | フィットアンドコア甲府</title>
 
+  <link rel="preload" as="image" href="assets/images/hero-fv2.webp" media="(min-width: 769px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-fv2_sp.webp" media="(max-width: 768px)" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260717a">
+  <link rel="stylesheet" href="css/style.css?v=20260717b">
 </head>
 <body>
   <div class="site">
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="#top">
-        <img src="assets/images/logo-02.webp" alt="FIT＆CORE" width="241" height="50">
+        <img src="assets/images/logo-02.webp" alt="FIT＆CORE" width="241" height="50" decoding="async">
         <span class="header__logo-sub">甲府</span>
       </a>
       <a class="btn btn--primary btn--sm header__cta" href="#contact">無料体験を予約する<span class="btn__arrow" aria-hidden="true"></span></a>
@@ -30,10 +32,16 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__visual">
-        <img src="assets/images/hero-fv2.webp" alt="トレーナーがマシントレーニングをサポートする様子" width="908" height="646">
+        <picture>
+          <source srcset="assets/images/hero-fv2_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img src="assets/images/hero-fv2.webp" alt="トレーナーがマシントレーニングをサポートする様子" width="908" height="646" fetchpriority="high" decoding="async">
+        </picture>
       </div>
       <div class="hero__decor" aria-hidden="true">
-        <img class="hero__wave" src="assets/images/hero-bg-wave.webp" alt="" width="1515" height="573">
+        <picture>
+          <source srcset="assets/images/hero-bg-wave_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="hero__wave" src="assets/images/hero-bg-wave.webp" alt="" width="1515" height="573" decoding="async">
+        </picture>
       </div>
       <div class="hero__fade" aria-hidden="true"></div>
       <div class="hero__bottom-fade" aria-hidden="true"></div>
@@ -66,20 +74,32 @@
     <!-- Campaign Banner -->
     <section class="campaign-banner" aria-label="キャンペーン">
       <div class="container">
-        <img src="assets/images/campaign-banner.webp" alt="今が始めるチャンス！入会金・月会費2ヶ月・事務手数料 すべて無料" class="campaign-banner__img">
+        <picture>
+          <source srcset="assets/images/campaign-banner_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img src="assets/images/campaign-banner.webp" alt="今が始めるチャンス！入会金・月会費2ヶ月・事務手数料 すべて無料" class="campaign-banner__img" decoding="async">
+        </picture>
       </div>
     </section>
 
     <!-- About -->
     <section class="section about" id="about">
       <div class="about__bg" aria-hidden="true">
-        <img src="assets/images/about-bg-wave.webp" alt="" width="1512" height="733">
+        <picture>
+          <source srcset="assets/images/about-bg-wave_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img src="assets/images/about-bg-wave.webp" alt="" width="1512" height="733" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="container">
         <div class="about__top">
           <div class="about__photos">
-            <img src="assets/images/hero-fv2.webp" alt="トレーナーがマシントレーニングをサポートする様子" class="about__photo about__photo--1" width="257" height="235">
-            <img src="assets/images/facility--4.webp" alt="ダンベルラック" class="about__photo about__photo--2" width="210" height="263">
+            <picture>
+              <source srcset="assets/images/hero-fv2_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/hero-fv2.webp" alt="トレーナーがマシントレーニングをサポートする様子" class="about__photo about__photo--1" width="257" height="235" loading="lazy" decoding="async">
+            </picture>
+            <picture>
+              <source srcset="assets/images/facility--4_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--4.webp" alt="ダンベルラック" class="about__photo about__photo--2" width="210" height="263" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="about__text">
             <div class="section-heading">
@@ -93,21 +113,21 @@
         <div class="feature-cards">
           <article class="feature-card">
             <div class="feature-card__icon">
-              <img src="assets/images/icon-1.webp" alt="" width="72" height="72">
+              <img src="assets/images/icon-1.webp" alt="" width="72" height="72" loading="lazy" decoding="async">
             </div>
             <h3 class="feature-card__title">スタッフが常駐</h3>
             <p class="feature-card__text">営業中は必ずスタッフが在籍。いつでも気軽に声がけできます。</p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon">
-              <img src="assets/images/icon-2.webp" alt="" width="72" height="72">
+              <img src="assets/images/icon-2.webp" alt="" width="72" height="72" loading="lazy" decoding="async">
             </div>
             <h3 class="feature-card__title">初心者でも迷わない</h3>
             <p class="feature-card__text">マシンの使い方から丁寧に指導。一人でも安心して通えます。</p>
           </article>
           <article class="feature-card">
             <div class="feature-card__icon">
-              <img src="assets/images/icon-3.webp" alt="" width="72" height="72">
+              <img src="assets/images/icon-3.webp" alt="" width="72" height="72" loading="lazy" decoding="async">
             </div>
             <h3 class="feature-card__title">安心の価格で続けやすい</h3>
             <p class="feature-card__text">高額なパーソナルジムでなくても、ちゃんと変われます。</p>
@@ -119,7 +139,10 @@
     <!-- Programs -->
     <section class="section programs" id="program">
       <div class="programs__bg" aria-hidden="true">
-        <img src="assets/images/feature-bg-wave.webp" alt="" width="1512" height="689">
+        <picture>
+          <source srcset="assets/images/feature-bg-wave_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img src="assets/images/feature-bg-wave.webp" alt="" width="1512" height="689" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="container">
         <div class="programs__intro">
@@ -148,8 +171,14 @@
     <!-- Facility -->
     <section class="section facility" id="facility" aria-label="設備">
       <div class="facility__bg" aria-hidden="true">
-        <img class="facility__bg-wave" src="assets/images/feature-bg-wave2.webp" alt="" width="1512" height="466">
-        <img class="facility__bg-fill" src="assets/images/feature-bg.webp" alt="" width="1512" height="1261">
+        <picture>
+          <source srcset="assets/images/feature-bg-wave2_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="facility__bg-wave" src="assets/images/feature-bg-wave2.webp" alt="" width="1512" height="466" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source srcset="assets/images/feature-bg_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="facility__bg-fill" src="assets/images/feature-bg.webp" alt="" width="1512" height="1261" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="container">
         <div class="section-heading section-heading--inline">
@@ -157,56 +186,80 @@
         </div>
         <div class="facility__grid">
           <article class="facility-card facility-card--large">
-            <img src="assets/images/facility--1.webp" alt="トレーニングフロア全景" width="560" height="360">
+            <picture>
+              <source srcset="assets/images/facility--1_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--1.webp" alt="トレーニングフロア全景" width="560" height="360" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card facility-card--large">
-            <img src="assets/images/facility--2.webp" alt="ヒップマシンとトレーニング器具" width="560" height="360">
+            <picture>
+              <source srcset="assets/images/facility--2_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--2.webp" alt="ヒップマシンとトレーニング器具" width="560" height="360" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card">
-            <img src="assets/images/facility--3.webp" alt="筋力トレーニングマシン" width="360" height="240">
+            <picture>
+              <source srcset="assets/images/facility--3_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--3.webp" alt="筋力トレーニングマシン" width="360" height="240" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card">
-            <img src="assets/images/facility--4.webp" alt="ダンベルラック" width="360" height="240">
+            <picture>
+              <source srcset="assets/images/facility--4_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--4.webp" alt="ダンベルラック" width="360" height="240" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card">
-            <img src="assets/images/facility--5.webp" alt="ウエイトスタックマシン" width="360" height="240">
+            <picture>
+              <source srcset="assets/images/facility--5_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--5.webp" alt="ウエイトスタックマシン" width="360" height="240" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card">
-            <img src="assets/images/facility--6.webp" alt="トレッドミル" width="360" height="240">
+            <picture>
+              <source srcset="assets/images/facility--6_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--6.webp" alt="トレッドミル" width="360" height="240" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card">
-            <img src="assets/images/facility--7.webp" alt="エアロバイク" width="360" height="240">
+            <picture>
+              <source srcset="assets/images/facility--7_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--7.webp" alt="エアロバイク" width="360" height="240" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
             </div>
           </article>
           <article class="facility-card">
-            <img src="assets/images/facility--8.webp" alt="トレーニングマシンとマット類" width="360" height="240">
+            <picture>
+              <source srcset="assets/images/facility--8_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <img src="assets/images/facility--8.webp" alt="トレーニングマシンとマット類" width="360" height="240" loading="lazy" decoding="async">
+            </picture>
             <div class="facility-card__body">
               <h3 class="facility-card__name">マシン名</h3>
               <p class="facility-card__desc">鍛えられる部位：心肺機能の向上、下半身のトレーニング</p>
@@ -219,8 +272,14 @@
     <!-- Reviews -->
     <section class="section reviews" id="reviews">
       <div class="reviews__accents" aria-hidden="true">
-        <img class="reviews__accent reviews__accent--left" src="assets/images/round-accent.webp" alt="" width="467" height="467">
-        <img class="reviews__accent reviews__accent--right" src="assets/images/round-accent.webp" alt="" width="467" height="467">
+        <picture>
+          <source srcset="assets/images/round-accent_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="reviews__accent reviews__accent--left" src="assets/images/round-accent.webp" alt="" width="467" height="467" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source srcset="assets/images/round-accent_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="reviews__accent reviews__accent--right" src="assets/images/round-accent.webp" alt="" width="467" height="467" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="container">
         <div class="section-heading section-heading--center">
@@ -267,7 +326,10 @@
     <section class="section flow" id="flow">
       <div class="flow__panel">
         <div class="flow__bg" aria-hidden="true">
-          <img src="assets/images/howtouse-bg-wave.webp" alt="" width="1512" height="998">
+          <picture>
+            <source srcset="assets/images/howtouse-bg-wave_sp.webp" media="(max-width: 768px)" type="image/webp">
+            <img src="assets/images/howtouse-bg-wave.webp" alt="" width="1512" height="998" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="container">
           <div class="section-heading section-heading--center section-heading--white">
@@ -303,12 +365,18 @@
     <!-- Pricing -->
     <section class="section pricing" id="price">
       <div class="pricing__bg" aria-hidden="true">
-        <img class="pricing__bg-wave" src="assets/images/price-bg-wave.webp" alt="" width="1512" height="1534">
+        <picture>
+          <source srcset="assets/images/price-bg-wave_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="pricing__bg-wave" src="assets/images/price-bg-wave.webp" alt="" width="1512" height="1534" loading="lazy" decoding="async">
+        </picture>
         <div class="pricing__bg-fill"></div>
       </div>
       <div class="container">
         <a class="pricing-campaign" href="#contact">
-          <img class="pricing-campaign__img" src="assets/images/campaign-banner-button.webp" alt="今が始めるチャンス！スタート応援キャンペーン。入会金・月会費2ヶ月・事務手数料すべて無料。無料体験を予約する" width="900" height="369">
+          <picture>
+            <source srcset="assets/images/campaign-banner-button_sp.webp" media="(max-width: 768px)" type="image/webp">
+            <img class="pricing-campaign__img" src="assets/images/campaign-banner-button.webp" alt="今が始めるチャンス！スタート応援キャンペーン。入会金・月会費2ヶ月・事務手数料すべて無料。無料体験を予約する" width="900" height="369" loading="lazy" decoding="async">
+          </picture>
         </a>
 
         <div class="section-heading section-heading--center">
@@ -317,7 +385,10 @@
         </div>
 
         <a class="pricing-visit" href="#contact">
-          <img class="pricing-visit__img" src="assets/images/free-campaign-banner.webp" alt="見学・体験受付中。持ち物：動きやすい服装、室内用シューズ、飲み物等。無料体験を予約する" width="912" height="287">
+          <picture>
+            <source srcset="assets/images/free-campaign-banner_sp.webp" media="(max-width: 768px)" type="image/webp">
+            <img class="pricing-visit__img" src="assets/images/free-campaign-banner.webp" alt="見学・体験受付中。持ち物：動きやすい服装、室内用シューズ、飲み物等。無料体験を予約する" width="912" height="287" loading="lazy" decoding="async">
+          </picture>
         </a>
 
         <div class="price-cards">
@@ -412,7 +483,10 @@
         <div class="access__grid">
           <div class="access__map-col">
             <div class="access__accent" aria-hidden="true">
-              <img src="assets/images/round-accent.webp" alt="" width="467" height="467">
+              <picture>
+                <source srcset="assets/images/round-accent_sp.webp" media="(max-width: 768px)" type="image/webp">
+                <img src="assets/images/round-accent.webp" alt="" width="467" height="467" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="access__map">
               <iframe
@@ -530,7 +604,10 @@
     <section class="section contact" id="contact">
       <div class="contact__bg" aria-hidden="true">
         <div class="contact__bg-fill"></div>
-        <img class="contact__bg-wave" src="assets/images/contact-bg-wave.webp" alt="" width="1512" height="366">
+        <picture>
+          <source srcset="assets/images/contact-bg-wave_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <img class="contact__bg-wave" src="assets/images/contact-bg-wave.webp" alt="" width="1512" height="366" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="container">
         <div class="section-heading section-heading--center">
@@ -571,7 +648,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img class="footer__logo" src="assets/images/logo-footer.svg" alt="FIT＆CORE 甲府" width="160" height="127">
+        <img class="footer__logo" src="assets/images/logo-footer.svg" alt="FIT＆CORE 甲府" width="160" height="127" loading="lazy" decoding="async">
         <dl class="footer__info">
           <div class="footer__info-row">
             <dt>住所</dt>
@@ -634,6 +711,6 @@
     </nav>
   </div>
 
-  <script src="js/main.js?v=20260716d"></script>
+  <script src="js/main.js?v=20260717b" defer></script>
 </body>
 </html>

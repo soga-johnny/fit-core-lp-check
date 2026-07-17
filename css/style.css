@@ -42,6 +42,38 @@
   box-sizing: border-box;
 }
 
+picture {
+  display: block;
+}
+
+.hero__visual picture {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__decor picture {
+  width: 100%;
+}
+
+.about__bg picture,
+.programs__bg picture,
+.facility__bg picture,
+.flow__bg picture,
+.pricing__bg picture,
+.contact__bg picture,
+.reviews__accents picture,
+.about__photos picture,
+.access__accent picture {
+  display: contents;
+}
+
+.facility-card picture,
+.pricing-campaign picture,
+.pricing-visit picture,
+.campaign-banner picture {
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
