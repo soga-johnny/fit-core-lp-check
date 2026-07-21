@@ -102,6 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
   markReveal('.news__action');
   markReveal('.contact .section-heading');
   markReveal('.contact-form', { variant: 'soft' });
+  markReveal('.thanks__title');
+  markReveal('.thanks__subtitle', { variant: 'soft' });
+  markReveal('.thanks__message', { variant: 'soft' });
+  markReveal('.thanks__note', { variant: 'soft' });
+  markReveal('.thanks__tel', { variant: 'soft' });
+  markReveal('.thanks__back', { variant: 'soft' });
   markReveal('.footer__brand', { variant: 'left' });
   markReveal('.footer__nav', { variant: 'right' });
 
