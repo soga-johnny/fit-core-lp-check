@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
   markReveal('.thanks__back', { variant: 'soft' });
   markReveal('.footer__brand', { variant: 'left' });
   markReveal('.footer__nav', { variant: 'right' });
+  markReveal('.footer__sns', { variant: 'soft' });
 
   if (reduceMotion) {
     document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
